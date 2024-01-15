@@ -40,7 +40,6 @@ const MyForm = ({
   const dispatch = useDispatch();
   const formData = useSelector(selectFormData);
   const [errors, setErrors] = useState<any>({});
-  // const errors: any = {};
 
   const min = (val: string, minLength: number) => {
     return val.length < minLength;

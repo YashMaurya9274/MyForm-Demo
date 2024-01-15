@@ -55,7 +55,6 @@ const Form = () => {
               marginBottom: 15,
             }}>
             <TextInput
-              // value={formData.firstName}
               onChangeText={text => handleUpdate('firstName', text)}
               onBlur={() => handleBlur('firstName')}
               label="First name"
@@ -75,7 +74,6 @@ const Form = () => {
                 onChangeText={text => handleUpdate('lastName', text)}
                 onBlur={() => handleBlur('lastName')}
                 label="Last name"
-                // onBlur={handleBlur('lastName')}
                 placeholderTextColor="gray"
               />
               {errors.lastName && (
